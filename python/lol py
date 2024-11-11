@@ -1,0 +1,11 @@
+def power(x, n):
+    # Basis tilfælde: enhver værdi opløftet i 0 er 1
+    if n == 0:
+        return 1
+    # Rekursivt kald: x opløftet til n er x * x^(n-1)
+    else:
+        return x * power(x, n - 1)
+
+# Eksempel
+resultat = power(2, 3)
+print(resultat)  # Dette vil udskrive 8
